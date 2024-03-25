@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  background: linear-gradient(
+      to right,
+      rgba(197, 225, 235, 0.8),
+      rgba(193, 187, 218, 0.8)
+    ),
+    url(../../../assets/img/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  min-height: 2rem;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+ }
+ .contactContainer {
+  width: 50%;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Center text within the container */
+ }
+ .contactInfo {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+ }
+ .contactInfo td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+ }
+ .contactInfo td img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+ }
+ .mapContainer {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+ }
+ .mapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+ h2 {
+  position: relative;
+  top: 1rem;
+  display: grid;
+  padding: 1rem 2rem;
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 2rem;
+ }
+ .headingMain {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  position: relative;
+  color: var(--navy);
+  font-weight: 600;
+ }
+ .headingMain::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.8rem);
+  height: 5px;
+  width: 3rem;
+  background: var(--navy);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+ }
+ .headingSub {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+  color: var(--slate);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 60rem;
+  margin: auto;
+  line-height: 1.6;
+ }

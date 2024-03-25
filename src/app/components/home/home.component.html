@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="homeContainer">
+    <div class="socialIcons" *ngIf="isMobile">
+      <div class="button fbBtn">
+        <div class="icon">
+          <a href=""><i class="bx bxl-facebook" (click)="redirectToFB()"></i></a>
+        </div>
+        <span>Facebook</span>
+      </div>
+      <div class="button linBtn">
+        <div class="icon" (click)="redirectToLinkdin()">
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <span>Linkedin</span>
+      </div>
+      <div class="button instaBtn">
+        <div class="icon">
+          <a href=""><i class="bx bxl-instagram-alt" (click)="redirectToInsta()"></i></a>
+        </div>
+        <span>Instagram</span>
+      </div>
+    </div>
+    <div class="homeContent">
+      <h1
+        class="name"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
+        Hey, I'm Manisri
+      </h1>
+      <div class="info">
+        <p>
+          I am a versatile fullstack developer, adept at crafting seamless user experiences and robust backend systems, with a knack for problem-solving and innovation.
+        </p>
+      </div>
+      <div class="btn">
+        <button (click)="redirectToProject()"><span></span> Projects</button>
+      </div>
+    </div>
+    <div class="email" *ngIf="isMobile">
+      <a href="mailto:jondoa@gmail.com">manisrichippa8@gmail.com</a>
+    </div>
+    <div class="scrollDown" (click)="redirectToAbout()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
